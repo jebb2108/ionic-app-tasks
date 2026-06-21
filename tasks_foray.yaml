@@ -1,0 +1,52 @@
+design_task:
+  description: >
+    Analyze and compare design concepts for the {app_name} (Foray) app.
+    Foray is a vanilla HTML/CSS/JS chat app with rooms, matching, registration.
+    Consider migrating to Ionic React or improving the current vanilla stack.
+    Evaluate: SPA navigation (pages), CSS architecture (global.css, per-page styles),
+    mobile UX, iOS compatibility, and potential for Capacitor packaging.
+  expected_output: >
+    Design concept document: analysis of current vanilla architecture vs Ionic React migration,
+    pros/cons, selected approach with justification, key screens to refactor,
+    recommended UX patterns, and iOS HIG considerations.
+  agent: app_designer
+
+architecture_task:
+  description: >
+    Design architecture for the {app_name} (Foray) app based on the chosen concept.
+    Current app uses vanilla HTML/CSS/JS with multiple pages (chat, match, room, registration, welcome).
+    Define: component structure, navigation pattern, state management, Capacitor needs.
+    Consider: CSS modularization, JS refactor into modules/services, iOS adaptation.
+  expected_output: >
+    Architecture document: folder structure, component tree, navigation map,
+    state management plan, CSS architecture proposal, Capacitor plugin list,
+    iOS-specific considerations (safe areas, keyboard, notch).
+  agent: ionic_architect
+
+development_task:
+  description: >
+    Refactor or rewrite the {app_name} (Foray) app following the architecture.
+    Current code is at /tmp/Foray. Improve code quality:
+    - Refactor JS into modules/services with clean separation
+    - Improve CSS with reusable utilities and consistent naming
+    - Fix iOS layout issues (safe areas, keyboard handling)
+    - Add error handling and loading states
+    - Ensure all pages work on mobile Safari
+    Do NOT break existing functionality.
+  expected_output: >
+    Updated source code for Foray: refactored JS files, improved CSS,
+    iOS-compatible HTML, better error handling. Working app preserved.
+  agent: code_developer
+
+review_task:
+  description: >
+    Review all changes made to {app_name} (Foray). Check:
+    - JavaScript quality and module structure
+    - CSS consistency and mobile responsiveness
+    - iOS compatibility (touch events, viewport, keyboard)
+    - No broken functionality across all pages
+    - Security (XSS in chat, input validation)
+  expected_output: >
+    Code review report: summary of changes, issues found (critical/major/minor),
+    specific file-level feedback, final verdict APPROVED or CHANGES REQUESTED.
+  agent: code_reviewer

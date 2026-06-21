@@ -1,0 +1,51 @@
+design_task:
+  description: >
+    Analyze and compare design concepts for the {app_name} (Dicty) app.
+    Dicty is an Ionic React dictionary app with vocabulary learning features.
+    Current features: AddWord, Dictionary, Search, Stats, Settings pages.
+    Evaluate: navigation structure (tabs?), UX improvements, iOS design compliance,
+    Capacitor integration quality, and potential new features.
+  expected_output: >
+    Design concept document: analysis of current architecture, UX issues found,
+    proposed improvements, selected concept with justification,
+    iOS HIG compliance check, recommended UX patterns.
+  agent: app_designer
+
+architecture_task:
+  description: >
+    Design architecture for the {app_name} (Dicty) app improvements.
+    Current app uses Ionic React 8, Vite, Capacitor 8, React Router 7.
+    Define: component tree refactoring, state management (useDictionaryApp, useUserSession),
+    Capacitor plugins needed, iOS-specific optimizations, data flow improvements.
+  expected_output: >
+    Architecture document: folder structure, component hierarchy,
+    state management improvements, data flow, Capacitor plugin configuration,
+    iOS optimization plan (safe areas, keyboard, gestures, status bar).
+  agent: ionic_architect
+
+development_task:
+  description: >
+    Implement improvements for the {app_name} (Dicty) Ionic React app at /tmp/Dicty.
+    - Fix any iOS layout issues (safe areas, notch, keyboard overlap)
+    - Improve TypeScript types and error handling
+    - Add loading states and error boundaries
+    - Optimize for mobile (touch events, gesture handling)
+    - Improve responsive design for different iPhone/iPad sizes
+    Keep all existing features working.
+  expected_output: >
+    Updated source code for Dicty: improved components, better iOS handling,
+    enhanced error handling, fixed layout issues. App builds without errors.
+  agent: code_developer
+
+review_task:
+  description: >
+    Review all changes made to {app_name} (Dicty). Check:
+    - React/Ionic best practices
+    - TypeScript types and correctness
+    - iOS compatibility (safe areas, keyboard, navigation gestures)
+    - Error boundaries and loading states
+    - Code quality and structure
+  expected_output: >
+    Code review report: summary of findings, categorized issues,
+    file-level feedback, final verdict APPROVED or CHANGES REQUESTED.
+  agent: code_reviewer

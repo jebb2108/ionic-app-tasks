@@ -1,28 +1,30 @@
-# Dicty — Tasks
+# Dicty — Задачи
 
-## 🎨 Design
-- [ ] **Analyze current architecture** — navigation, UX issues
-- [ ] **Compare navigation patterns** — tabs vs other
-- [ ] **iOS HIG compliance** — check design guidelines
-- [ ] **Select improvements** — with justification
+## 🎨 Дизайн
+- [ ] **Проанализировать текущую архитектуру** — Ionic React, страницы, компоненты
+- [ ] **Оценить UX** — навигация, удобство, iOS HIG
+- [ ] **Предложить улучшения** — новые фичи, редизайн экранов
+- [ ] **iOS Design Guidelines** — проверить соответствие
 
-## 🏗️ Architecture
-- [ ] **Component tree refactoring** — cleaner structure
-- [ ] **State management** — useDictionaryApp, useUserSession
-- [ ] **Capacitor plugins** — audio, notifications, storage
-- [ ] **iOS optimization** — safe areas, keyboard, gestures, status bar
-- [ ] **Data flow** — improve API calls, caching
+## 🏗️ Архитектура
+- [ ] **Рефакторинг компонентов** — cleaner structure, переиспользуемость
+- [ ] **Стейт-менеджмент** — useDictionaryApp, useUserSession
+- [ ] **Capacitor плагины** — аудио произношения, уведомления, storage
+- [ ] **iOS оптимизация** — safe areas, клавиатура, жесты, status bar
+- [ ] **Data flow** — улучшить API запросы, кэширование
 
-## 💻 Development
-- [ ] **Fix iOS layout** — safe areas, notch, keyboard overlap
-- [ ] **Improve TypeScript** — strict types, error handling
-- [ ] **Error boundaries** — loading states, error UI
-- [ ] **Mobile optimization** — touch events, gestures
-- [ ] **Responsive design** — iPhone/iPad sizes
+## 💻 Разработка
+- [ ] **iOS layout фиксы** — safe areas, notch, клавиатура
+- [ ] **TypeScript** — строгие типы, обработка ошибок
+- [ ] **Error boundaries** — загрузка, ошибки, offline
+- [ ] **Мобильная оптимизация** — touch events, жесты
+- [ ] **Адаптивность** — разные размеры iPhone/iPad
+- [ ] **Новые фичи** — поиск, статистика, настройки
 
-## 🔍 Review
-- [ ] **React/Ionic best practices** — components, hooks
-- [ ] **TypeScript correctness** — types, null safety
-- [ ] **iOS compatibility** — safe areas, keyboard, gestures
-- [ ] **Error handling** — boundaries, loading states
-- [ ] **Code quality** — structure, naming, comments
+## 🔍 Ревью
+- [ ] **React/Ionic best practices** — компоненты, хуки
+- [ ] **TypeScript** — типы, null safety
+- [ ] **iOS совместимость** — safe areas, клавиатура, жесты
+- [ ] **Обработка ошибок** — boundaries, loading states
+- [ ] **Качество кода** — структура, именование, комментарии
+- [ ] **Финальный вердикт** — APPROVED / CHANGES REQUESTED
